@@ -128,6 +128,12 @@ h1 span:last-child {
   font-size: 18px;
   transition: all var(--mainDuration) ease-in;
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .buttons button {
+    font-size: 16px !important;
+    padding: 16px 32px !important;
+  }
+}
 .buttons button:first-child:hover {
   transform: translateY(-4px);
   box-shadow: 0px 15px 10px -3px rgba(234, 88, 12, 0.25);
@@ -1124,7 +1130,10 @@ textarea {
 
 /* ==========responsive ========== */
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media (max-width: 676px) {
+  section.homeSection.mainPadding {
+    padding-top: 85px !important;
+  }
   .mainPadding {
     padding: 64px 0 !important;
   }
@@ -1358,10 +1367,228 @@ textarea {
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 677px) and (max-width: 1100px) {
+  section.homeSection.mainPadding {
+    padding-top: 96px !important;
+  }
+  .mainPadding {
+    padding: 72px 0 !important;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 50px;
+  }
+  .homeSection p.aboutHome {
+    padding: 0;
+    font-size: 19px !important;
+    line-height: 30px !important;
+  }
+  .buttons button {
+    width: auto;
+  }
+  .homeImage {
+    padding: 32px !important;
+  }
+  .tags {
+    width: 85px !important;
+    height: 85px !important;
+    transform: translate(0%, -16%) !important;
+  }
+  .mobile {
+    width: 75px !important;
+    height: 75px !important;
+    transform: translate(-10%, 22%) !important;
+  }
+  .detailsSecotion p {
+    font-size: 15px !important;
+  }
+  .title > span {
+    padding: 7px 14px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .title h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .title p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  /* Services */
+  .serviceIcon,
+  .techIcons {
+    width: 55px;
+    height: 55px;
+  }
+  .serviceCard h3 {
+    line-height: 27px;
+    font-size: 20px;
+  }
+  .serviceCard h3 + p {
+    line-height: 25px;
+    font-size: 15px;
+  }
+  .aboutService p {
+    line-height: 20px;
+    font-size: 13px;
+  }
+  .serviceCard a {
+    line-height: 22px;
+    font-size: 15px;
+  }
+
+  /* ====== Technology ====== */
+  .nav-tabs button {
+    padding: 8px 16px !important;
+  }
+  div.technologyTitle h3 + p {
+    font-size: 17px !important;
+    line-height: 27px;
+  }
+  .techCard {
+    height: auto !important;
+  }
+  div.techCard h4 {
+    font-size: 20px !important;
+    line-height: 28px;
+  }
+  div.techCard h4 + p {
+    font-size: 15px !important;
+    line-height: 23px;
+  }
+  .techCard span {
+    font-weight: 600 !important;
+    font-size: 13px !important;
+  }
+
+  /* Testimonials */
+  .rate span {
+    width: 55px;
+    height: 55px;
+  }
+  .testimonialsReview {
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 30px !important;
+  }
+  .testimoCard {
+    padding: 28px !important;
+  }
+  .TestiImage {
+    margin-bottom: 12px;
+  }
+
+  /* ======== FAQ ======== */
+  .accordion-button {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26px;
+    position: relative;
+    padding-right: 3rem;
+  }
+  .accordion-button span {
+    flex-shrink: 0;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px !important;
+    height: 32px !important;
+    i {
+      font-size: 15px !important;
+    }
+  }
+  .accordion-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px !important;
+  }
+
+  /* ========== Contact ========== */
+  .contactCard {
+    margin-top: 36px !important;
+  }
+  .contactCard h3 + p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px !important;
+  }
+  input,
+  select,
+  textarea,
+  select option {
+    padding: 13px 16px !important;
+    font-size: 16px !important;
+  }
+  ::placeholder {
+    color: #8c8d8e;
+    font-size: 15px !important;
+  }
+  input[type="checkbox"] + label {
+    font-size: 13px !important;
+    font-weight: 400;
+    line-height: 21px !important;
+  }
+  button[type="submit"] {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    line-height: 26px !important;
+  }
+  .contactRight > h4 {
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    line-height: 30px !important;
+  }
+  .contactRight + .contactRightIcon h5 {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+  .contactRightText {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+  .contactMethod h5 {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 22px !important;
+  }
+  .contactMethod p {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 22px !important;
+  }
+
+  /* ========== Footer ========== */
+  .footer.mainPadding {
+    padding: 56px 0 !important;
+  }
+  .footerLogo {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 28px !important;
+  }
+  .leftTopFooter p {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+  }
+  .rightTopFooter span {
+    width: 44px !important;
+    height: 44px !important;
+    i {
+      font-size: 18px !important;
+    }
+  }
+  .bottomFooter p:first-child {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+  .bottomFooter p:last-child {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
 }
