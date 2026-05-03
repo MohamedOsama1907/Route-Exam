@@ -1167,7 +1167,7 @@ textarea {
     line-height: 32px;
   }
   .title p {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 25px;
   }
 
@@ -1244,12 +1244,21 @@ textarea {
     margin-bottom: 10px;
   }
 
-  /*  */
+  /* ========FAQ======= */
 
   .accordion-button {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
+  }
+  .accordion-button span {
+    /* dont shrink any way */
+    flex-shrink: 0;
+    width: 30px !important;
+    height: 30px !important;
+    i {
+      font-size: 14px !important;
+    }
   }
   .accordion-header i {
     font-size: 11px !important;
@@ -1259,7 +1268,94 @@ textarea {
     font-weight: 400;
     line-height: 21px !important;
   }
-
+  /* ===========Contact section========= */
+  .contactCard {
+    margin-top: 30px !important;
+  }
+  .contactCard h3 + p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px !important;
+  }
+  input,
+  select,
+  textarea,
+  select option {
+    padding: 12px 15px !important;
+    font-size: 15px !important;
+  }
+  ::placeholder {
+    color: #8c8d8e;
+    font-size: 14px !important;
+  }
+  .contactInput {
+    background-color: #f3f4f6;
+    padding: 12px 16px;
+    border: transparent !important;
+    transition: all 0.3s ease;
+  }
+  input[type="checkbox"] + label {
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 20px !important;
+  }
+  button[type="submit"] {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 25px !important;
+  }
+  .contactRight > h4 {
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    line-height: 28px !important;
+  }
+  .contactRight + .contactRightIcon h5 {
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+  .contactRightText {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+  .contactMethod h5 {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 21px !important;
+  }
+  .contactMethod p {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 21px !important;
+  }
+  /* footer section */
+  .footer.mainPadding {
+    padding: 48px 0 !important;
+  }
+  .footerLogo {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 25px !important;
+  }
+  .leftTopFooter p {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 16px !important;
+  }
+  .rightTopFooter span {
+    width: 40px !important;
+    height: 40px !important;
+    i {
+      font-size: 16px !important;
+    }
+  }
+  .bottomFooter p:first-child {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+  .bottomFooter p:last-child {
+    font-size: 11px !important;
+    line-height: 14px !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
