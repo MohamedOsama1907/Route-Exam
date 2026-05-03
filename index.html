@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- open graph -->
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
+    <meta
+      property="og:title"
+      content="Clarity - Digital Solutions Platform  " />
+    <meta
+      property="og:image"
+      content="https://mohamedosama1907.github.io/Route-Exam//Images/favicon%20(1).png" />
+    <meta
+      property="og:url"
+      content="https://mohamedosama1907.github.io/Route-Exam/" />
     <meta property="og:type" content="website" />
     <!-- robots meta ===> i don't understand why ? -->
     <meta name="robots" content="index, follow" />
@@ -63,9 +69,9 @@
           </button>
           <!-- other links -->
           <div
-            class="otherLinks collapse navbar-collapse"
+            class="otherLinks collapse navbar-collapse "
             id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-center">
+            <ul class="navbar-nav align-items-start align-items-lg-center">
               <li class="nav-item text-center me-4">
                 <a
                   class="nav-link position-relative p-0 active fw-medium mainColor"
@@ -74,14 +80,14 @@
                   >Home</a
                 >
               </li>
-              <li class="nav-item text-center me-4 dropdown">
+              <li class="nav-item text-center me-4 dropdown w-100 ">
                 <a
-                  class="nav-link position-relative p-0 fw-medium"
+                  class="nav-link position-relative p-0 fw-medium w-100 text-start"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  Services <i class="fa-solid fa-angle-down"></i>
+                  Services <i class="fa-solid fa-angle-down position-absolute end-0"></i>
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -126,12 +132,26 @@
                 >
               </li>
             </ul>
-            <!-- sign buttons  -->
+            <!-- sign buttons (hidden in small screens)  -->
             <div
-              class="signContainer d-flex column-gap-4 align-items-center ms-auto">
+              class="signContainer column-gap-4 align-items-center ms-auto d-none d-xl-flex">
               <a href="#" class="fw-medium nav-link">Sign In</a>
               <button
                 class="btn mainGradiant rounded-pill text-white fw-medium">
+                Get Started
+              </button>
+            </div>
+            <!-- aprear in only small and meduim screens -->
+            <div
+              class="signMobile d-flex d-lg-none flex-column row-gap-3 w-100 mt-3">
+              <button
+                type="button"
+                class="btn border rounded-pill secondaryColor fw-medium px-4 py-2 text-dark w-100 text-center">
+                Sign In
+              </button>
+              <button
+                type="button"
+                class="btn mainGradiant rounded-pill text-white fw-medium px-4 py-2 text-dark w-100 text-center">
                 Get Started
               </button>
             </div>
@@ -2137,7 +2157,7 @@
       </section>
     </main>
 
-    <footer class="footer mainPadding ">
+    <footer class="footer mainPadding">
       <div class="container">
         <div
           class="topFooter d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-lg-between border-bottom">
