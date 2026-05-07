@@ -69,9 +69,9 @@
           </button>
           <!-- other links -->
           <div
-            class="otherLinks collapse navbar-collapse "
+            class="otherLinks collapse navbar-collapse"
             id="navbarNavDropdown">
-            <ul class="navbar-nav align-items-start align-items-lg-center">
+            <ul class="navbar-nav align-items-start align-items-xxl-center">
               <li class="nav-item text-center me-4">
                 <a
                   class="nav-link position-relative p-0 active fw-medium mainColor"
@@ -80,15 +80,21 @@
                   >Home</a
                 >
               </li>
-              <li class="nav-item text-center me-4 dropdown w-100 ">
+              <li class="nav-item text-center me-4 dropdown w-100">
                 <a
                   class="nav-link position-relative p-0 fw-medium w-100 text-start"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  Services <i class="fa-solid fa-angle-down position-absolute end-0"></i>
+                  Services
+                  <i
+                    class="fa-solid fa-angle-down d-none d-xl-inline-block"></i>
                 </a>
+                <span
+                  class="position-absolute d-flex align-items-center justify-content-center end-0 d-xl-none secondaryColor">
+                  <i class="fa-solid fa-angle-down"></i>
+                </span>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item fw-medium" href="#">Action</a>
@@ -143,7 +149,7 @@
             </div>
             <!-- aprear in only small and meduim screens -->
             <div
-              class="signMobile d-flex d-lg-none flex-column row-gap-3 w-100 mt-3">
+              class="signMobile d-flex d-xl-none flex-column row-gap-3 w-100 mt-3">
               <button
                 type="button"
                 class="btn border rounded-pill secondaryColor fw-medium px-4 py-2 text-dark w-100 text-center">
